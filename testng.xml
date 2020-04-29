@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="classes" thread-count="4">
+
+    <!--<listeners>-->
+        <!--<listener class-name="utils.framework.SuiteListener"/>-->
+    <!--</listeners>-->
+
+    <parameter name="myParam" value="This is the value for a parameter"/>
+
+
+    <test name="Tests">
+        <classes>
+            <class name="TestClass"/>
+            <class name="TestClass2"/>
+            <class name="TestClass3"/>
+            <class name="TestClass4"/>
+        </classes>
+    </test>
+
+</suite>
